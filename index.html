@@ -16,6 +16,10 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
     <title>Duck - Page</title>
 </head>
 
@@ -162,12 +166,12 @@
                 <img src="/assets/images/banner-image.png" alt="" class="w-full h-auto object-contain" />
             </div>
             <div id="jumb-bg">
-                <h2 >Rubber Duck Debuggings</h2>
+                <h2>Rubber Duck Debuggings</h2>
                 <p>
                     Spiegare il codice a una paperella di gomma aiuta i programmatori a chiarire il pensiero e
                     individurare errori nascoti.
                 </p>
-                <button >
+                <button>
                     ACQUISTALA SUBITO!
                 </button>
             </div>
@@ -219,9 +223,123 @@
         <section id="recensioni">
             <h2>Cosa ne pensano i nostri sviluppatori</h2>
 
-            <!-- slider -->
-            <div>
-
+            <!-- Slider main container -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div>
+                            <p>
+                                La paperella di gomma è diventata il mio strumento di debugging preferito. Spiegare i
+                                problemi al mio 'assistente' silenzioso mi ha aiutato a risolvere bug che altrimenti mi
+                                avrebbero fatto impazzire. È anche un ottimo antistress nelle giornate difficili!
+                            </p>
+                            <span>
+                                <svg width="24" height="24" fill="gold">
+                                    <use href="#star-fill" />
+                                </svg>
+                                <svg width="24" height="24" fill="gold">
+                                    <use href="#star-fill" />
+                                </svg>
+                                <svg width="24" height="24" fill="gold">
+                                    <use href="#star-fill" />
+                                </svg>
+                                <svg width="24" height="24" fill="gold">
+                                    <use href="#star-fill" />
+                                </svg>
+                                <svg width="24" height="24" fill="gold">
+                                    <use href="#star-fill" />
+                                </svg>
+                            </span>
+                            <p>
+                                David William - Feb 22, 2023
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                Non avrei mai immaginato quanto una semplice paperella di gomma potesse fare la
+                                differenza. È incredibile come verbalizzare i problemi davanti alla paperella mi aiuti a
+                                vedere soluzioni che prima non notavo. Inoltre, è carinissima sulla mia scrivania!
+                            </p>
+                            <span>
+                                <svg width="24" height="24" fill="gold">
+                                    <use href="#star-fill" />
+                                </svg>
+                                <svg width="24" height="24" fill="gold">
+                                    <use href="#star-fill" />
+                                </svg>
+                                <svg width="24" height="24" fill="gold">
+                                    <use href="#star-fill" />
+                                </svg>
+                                <svg width="24" height="24" fill="gold">
+                                    <use href="#star-fill" />
+                                </svg>
+                                <svg width="24" height="24" fill="gold">
+                                    <use href="#star-fill" />
+                                </svg>
+                            </span>
+                            <p>
+                                Emma Turner - April 5, 2023
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                Da quando ho adottato la paperella di gomma, il mio processo di debugging è migliorato
+                                notevolmente. La trovo molto utile per schiarirmi le idee e trovare errori nascosti. La
+                                porto sempre con me, ovunque vada!
+                            </p>
+                            <span>
+                                <svg width="24" height="24" fill="gold">
+                                    <use href="#star-fill" />
+                                </svg>
+                                <svg width="24" height="24" fill="gold">
+                                    <use href="#star-fill" />
+                                </svg>
+                                <svg width="24" height="24" fill="gold">
+                                    <use href="#star-fill" />
+                                </svg>
+                                <svg width="24" height="24" fill="gold">
+                                    <use href="#star-fill" />
+                                </svg>
+                                <svg width="24" height="24" fill="gold">
+                                    <use href="#star-fill" />
+                                </svg>
+                            </span>
+                            <p>
+                                Emma Turner - April 5, 2023
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <p>
+                                La paperella di gomma è diventata il mio strumento di debugging preferito. Spiegare i
+                                problemi al mio 'assistente' silenzioso mi ha aiutato a risolvere bug che altrimenti mi
+                                avrebbero fatto impazzire. È anche un ottimo antistress nelle giornate difficili!
+                            </p>
+                            <span>
+                                <svg width="24" height="24" fill="gold">
+                                    <use href="#star-fill" />
+                                </svg>
+                                <svg width="24" height="24" fill="gold">
+                                    <use href="#star-fill" />
+                                </svg>
+                                <svg width="24" height="24" fill="gold">
+                                    <use href="#star-fill" />
+                                </svg>
+                                <svg width="24" height="24" fill="gold">
+                                    <use href="#star-fill" />
+                                </svg>
+                                <svg width="24" height="24" fill="gold">
+                                    <use href="#star-fill" />
+                                </svg>
+                            </span>
+                            <p>
+                                David William - Feb 22, 2023
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
 
@@ -229,30 +347,72 @@
         <section id="collezione">
             <h2>La collezione di paparelle</h2>
             <span>Una paperella per ogni stile di programmazione</span>
-            <div>
-                <div>
-                    <img src="" alt="">
+            <div class="row">
+                <div class="card">
+                    <img src="/assets/images/product-item1.png" alt="cool-duck">
                     <div>
-                        <i>stars</i>
+                        <svg width="24" height="24" fill="gold">
+                            <use href="#star-fill" />
+                        </svg>
+                        <svg width="24" height="24" fill="gold">
+                            <use href="#star-fill" />
+                        </svg>
+                        <svg width="24" height="24" fill="gold">
+                            <use href="#star-fill" />
+                        </svg>
+                        <svg width="24" height="24" fill="gold">
+                            <use href="#star-fill" />
+                        </svg>
+                        <svg width="24" height="24" fill="gold">
+                            <use href="#star-fill" />
+                        </svg>
                     </div>
-                    <h3>title</h3>
-                    <span>Price</span>
+                    <h3>Cool-duck</h3>
+                    <span>$15</span>
                 </div>
-                <div>
-                    <img src="" alt="">
+                <div class="card">
+                    <img src="/assets/images/product-item2.png" alt="classic-duck">
                     <div>
-                        <i>stars</i>
+                        <svg width="24" height="24" fill="gold">
+                            <use href="#star-fill" />
+                        </svg>
+                        <svg width="24" height="24" fill="gold">
+                            <use href="#star-fill" />
+                        </svg>
+                        <svg width="24" height="24" fill="gold">
+                            <use href="#star-fill" />
+                        </svg>
+                        <svg width="24" height="24" fill="gold">
+                            <use href="#star-fill" />
+                        </svg>
+                        <svg width="24" height="24" fill="gold">
+                            <use href="#star-fill" />
+                        </svg>
                     </div>
-                    <h3>title</h3>
-                    <span>Price</span>
+                    <h3>Classic-duck</h3>
+                    <span>$29</span>
                 </div>
-                <div>
-                    <img src="" alt="">
+                <div class="card">
+                    <img src="/assets/images/product-item3.png" alt="bat-duck">
                     <div>
-                        <i>stars</i>
+                        <svg width="24" height="24" fill="gold">
+                            <use href="#star-fill" />
+                        </svg>
+                        <svg width="24" height="24" fill="gold">
+                            <use href="#star-fill" />
+                        </svg>
+                        <svg width="24" height="24" fill="gold">
+                            <use href="#star-fill" />
+                        </svg>
+                        <svg width="24" height="24" fill="gold">
+                            <use href="#star-fill" />
+                        </svg>
+                        <svg width="24" height="24" fill="gold">
+                            <use href="#star-fill" />
+                        </svg>
                     </div>
-                    <h3>title</h3>
-                    <span>Price</span>
+                    <h3>Bat-duck</h3>
+                    <span>$69</span>
                 </div>
             </div>
         </section>
@@ -267,6 +427,7 @@
     </footer>
 
     <!-- script js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/assets/script.js"></script>
 </body>
 

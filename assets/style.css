@@ -138,6 +138,7 @@ img {
 #jumbotron {
     display: flex;
     height: 600px;
+    padding-bottom: 60px;
 
     div {
         width: 50%;
@@ -171,39 +172,119 @@ img {
         border: 1px solid var(--text-primary);
     }
 
-    button:hover{
+    button:hover {
         background-color: var(--text-primary);
         color: white;
         cursor: pointer;
     }
 }
 
-#strenghts{
+#strenghts {
+    padding-bottom: 60px;
     display: flex;
 
-    div{
+    div {
         padding: 2rem 4rem;
     }
 
-    h3{
+    h3 {
         padding: 0rem 3rem;
         margin-bottom: 0.5rem;
         font-weight: 600;
         font-size: 22px;
     }
 
-    h3, p{
+    h3,
+    p {
         text-align: center;
     }
 
-    img{
+    img {
         width: 250px;
         object-fit: contain;
     }
 }
 
+#recensioni{
+    padding-bottom: 60px;
+
+    h2{
+        text-align: center;
+        font-size: 42px;
+        font-weight: 600;
+    }
+}
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: flex !important;
+    flex-direction: row;
+    font-size: 18px;
+    padding: 2rem 6rem 4rem 6rem;
+    gap: 10rem;
+
+    div{
+        width: 33%;
+    }
+
+    p{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+#collezione{
+    padding: 2rem 0px;
+    background-color: rgba(211, 211, 211, 0.226);
+
+    h2{
+        text-align: center;
+        font-size: 42px;
+        font-weight: 600;
+    }
+
+    span{
+        display: block;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 400;
+        padding: 1rem 0;
+    }
+
+    .row{
+        display: flex;
+        gap: 2rem;
+        padding: 0rem 4rem;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+
+        h3, span{
+            font-size: 16px;
+            padding: 0.25rem 0;
+        }
+
+        img{
+            object-fit: contain;
+            padding: 1rem 0;
+        }
+
+        span{
+            text-align: start;
+            color: var(--accent);
+        }
+    }
+}
+
 /* mobile */
 @media (max-width: 480px) {
+
     h1,
     h2,
     h3,
