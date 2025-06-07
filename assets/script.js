@@ -15,10 +15,34 @@ closeButton.addEventListener('click', function () {
     overlay.style.display = 'none';
 });
 
+/* slider */
 var swiper = new Swiper(".mySwiper", {
-    direction: 'horizontal',
+    slidesPerView: 1, // default
+    spaceBetween: 10,
     pagination: {
-        el: ".swiper-pagination",
-        dynamicBullets: true,
+      el: ".swiper-pagination",
+      dynamicBullets: true,
     },
-});
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+  });
+
+  document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+      const answer = question.nextElementSibling;
+      const toggle = question.querySelector('.faq-toggle');
+
+      // Toggle visibilità
+      const isVisible = answer.style.display === 'block';
+      answer.style.display = isVisible ? 'none' : 'block';
+      toggle.textContent = isVisible ? '+' : '−';
+    });
+  });
