@@ -304,10 +304,22 @@ img {
 
     .row{
         width: 100%;
+        height: 700px;
         display: flex;
         flex-direction: row;
-        gap: 2rem;
         padding: 3rem 2rem;
+    }
+
+    .img-faq{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        img{
+            object-fit: contain;
+            max-width: 100% ;
+            height: 100%;
+        }
     }
 
     div{
@@ -325,6 +337,7 @@ img {
     .faq-question{
         display: flex;
         align-items: center;
+        justify-content: space-between;
         gap: 4rem;
         width: 100%;
 
@@ -346,6 +359,104 @@ img {
         display: none;
     }
 }
+
+/* vantaggi */
+#vantaggi{
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 4rem 6rem;
+
+        i{
+            color:var(--text-hover);
+        }
+
+        h3{
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        p{
+            padding-top: 0.5rem;
+        }
+    }
+
+    div:first-child{
+        border-right: 1px solid lightgray;
+    }
+
+    div:last-child{
+        border-left: 1px solid lightgray;
+    }
+}
+
+/* footer */
+footer{
+    i{
+        color: var(--accent);
+    }
+
+    #newsletter{
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        h2{
+            font-size: 50px;
+            font-weight: 700;
+            padding: 0.25rem 0rem;
+        }
+        p{
+            padding-bottom: 1rem;
+        }
+
+        form{
+            border-bottom: 1px solid lightgray;
+            width: 450px;
+            padding: 0.5rem 0;
+            display: flex;
+            justify-content: space-between;
+
+            input{
+                border: none;
+                background-color: transparent;
+                color: var(--text-primary);
+                outline: none;
+                font-size: 16px;
+            }
+
+
+            button{
+                border: none;
+                background-color: transparent;
+            }
+        }
+    }
+
+    #socials{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+}
+
+.bg-footer{
+    background-color: rgba(211, 211, 211, 0.226);
+}
+
+
 
 /* mobile */
 @media (max-width: 480px) {
@@ -425,6 +536,7 @@ img {
         .row{
             display: flex;
             flex-direction: column;
+            height: 100%;
             padding: 2rem 0rem;
         }
 
@@ -444,6 +556,18 @@ img {
             p{
                 font-size: 16px;
             }
+        }
+    }
+
+    #vantaggi{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        div{
+            border: none;
+            padding: 2rem 4rem;
         }
     }
 
