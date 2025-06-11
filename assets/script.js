@@ -53,22 +53,21 @@ const formSection = document.getElementById('form-section');
 const grazieSection = document.getElementById('grazie-section');
 
 form.addEventListener('submit', function (e) {
-  // Per evitare che il browser cambi pagina (Netlify farà comunque il submit)
-  e.preventDefault();
+  e.preventDefault(); // Evita redirect
 
-  // Nascondi form, mostra "grazie"
+  // Nascondi il form, mostra la sezione di ringraziamento
   formSection.style.display = 'none';
   grazieSection.style.display = 'block';
 
-  // Fai partire il vero submit dopo 200ms (Netlify riceve i dati)
+  // Invia comunque i dati a Netlify (submit "manuale")
   setTimeout(() => {
     form.submit();
   }, 200);
 
-  // Dopo 1 minuto riporta tutto com'era (opzionale)
+  // Dopo 1 minuto, riabilita il form (opzionale)
   setTimeout(() => {
     form.reset();
     formSection.style.display = 'block';
     grazieSection.style.display = 'none';
-  }, 60000); // 60.000 ms = 1 minuto
+  }, 60000);
 });
