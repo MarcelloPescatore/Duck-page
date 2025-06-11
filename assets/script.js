@@ -35,6 +35,7 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+/* accordion */
 document.querySelectorAll('.faq-question').forEach(question => {
   question.addEventListener('click', () => {
     const answer = question.nextElementSibling;
@@ -46,5 +47,3 @@ document.querySelectorAll('.faq-question').forEach(question => {
     toggle.textContent = isVisible ? '+' : '−';
   });
 });
-
-

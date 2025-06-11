@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth !important;
+}
+
 :root {
     --text-primary: #3d3a38;
     --text-hover: #2e45cc;
