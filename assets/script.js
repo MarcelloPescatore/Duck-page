@@ -48,25 +48,3 @@ document.querySelectorAll('.faq-question').forEach(question => {
 });
 
 
-const form = document.getElementById('contatto-form');
-const grazieSection = document.getElementById('grazie-section');
-
-form.addEventListener('submit', function (e) {
-  e.preventDefault(); // Evita redirect
-
-  // Nascondi il form, mostra la sezione di ringraziamento
-  form.style.display = 'none';
-  grazieSection.style.display = 'block';
-
-  // Invia comunque i dati a Netlify (submit "manuale")
-  setTimeout(() => {
-    form.submit();
-  }, 200);
-
-  // Dopo 1 minuto, riabilita il form (opzionale)
-  setTimeout(() => {
-    form.reset();
-    form.style.display = 'block';
-    grazieSection.style.display = 'none';
-  }, 60000);
-});
