@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth !important;
-}
 
 :root {
     --text-primary: #3d3a38;
@@ -194,7 +191,7 @@ main {
 }
 
 /* punti di forza */
-#strenghts {
+#strengths {
     padding-bottom: 60px;
     display: flex;
 
@@ -550,7 +547,7 @@ footer {
         }
     }
 
-    #strenghts {
+    #strengths {
         flex-direction: column;
 
         div {
@@ -638,4 +635,10 @@ footer {
         }
     }
 
+}
+
+html,
+body,
+main {
+    scroll-behavior: smooth !important;
 }

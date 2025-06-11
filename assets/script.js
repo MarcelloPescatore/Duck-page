@@ -33,7 +33,7 @@ var swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
     },
   },
-});
+}); 
 
 /* accordion */
 document.querySelectorAll('.faq-question').forEach(question => {
