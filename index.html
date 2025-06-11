@@ -520,7 +520,7 @@
                 <h3>
                     Spedizione Gratuita
                 </h3>
-                <p>                
+                <p>
                     Dal magazzino alla scrivania
                 </p>
             </div>
@@ -533,7 +533,7 @@
                 <h3>
                     Rimborso Garantito
                 </h3>
-                <p>                
+                <p>
                     Ti rimborsiamo se la paperella fa quack
                 </p>
             </div>
@@ -549,8 +549,11 @@
                 <p>
                     Iscriviti alla newsletter per rimanere aggiornato su sconti e novità
                 </p>
-                <form action="">
-                    <input type="text" placeholder="Lascia la tua email qui">
+                <form name="contatto" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contatto" />
+
+                    <input type="email" name="email" placeholder="Lascia la tua email qui" required />
+
                     <button type="submit">
                         <i>
                             <svg width="40" height="40" fill="currentColor">
@@ -559,6 +562,9 @@
                         </i>
                     </button>
                 </form>
+                <section id="grazie-section" style="display: none;">
+                    <p>Grazie per il tuo messaggio! 🙏</p>
+                </section>
             </div>
             <div id="socials">
                 <i>
