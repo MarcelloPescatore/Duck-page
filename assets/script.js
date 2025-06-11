@@ -49,14 +49,13 @@ document.querySelectorAll('.faq-question').forEach(question => {
 
 
 const form = document.getElementById('contatto-form');
-const formSection = document.getElementById('form-section');
 const grazieSection = document.getElementById('grazie-section');
 
 form.addEventListener('submit', function (e) {
   e.preventDefault(); // Evita redirect
 
   // Nascondi il form, mostra la sezione di ringraziamento
-  formSection.style.display = 'none';
+  form.style.display = 'none';
   grazieSection.style.display = 'block';
 
   // Invia comunque i dati a Netlify (submit "manuale")
@@ -67,7 +66,7 @@ form.addEventListener('submit', function (e) {
   // Dopo 1 minuto, riabilita il form (opzionale)
   setTimeout(() => {
     form.reset();
-    formSection.style.display = 'block';
+    form.style.display = 'block';
     grazieSection.style.display = 'none';
   }, 60000);
 });
